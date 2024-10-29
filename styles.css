@@ -106,9 +106,12 @@ body {
   font-size: 14px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   border-radius: 22px;
+}
+.ipsum-section__item img{
+    width: 100%;
 }
 .ipsum-section__item__title {
   /* text-align: left; */
