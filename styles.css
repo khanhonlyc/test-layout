@@ -3,6 +3,16 @@
   margin: 0;
   padding: 0;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: "Lora", serif;
@@ -12,6 +22,12 @@ body {
 .container {
   max-width: 1376px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+/* start section ullamco */
+.ullamco-section {
+  padding-bottom: 80px;
 }
 .ullamco-section__title {
   text-align: center;
@@ -46,7 +62,10 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+  .ullamco-section {
+    padding-bottom: 40px;
+  }
   .ullamco-section__title {
     font-size: 32px;
   }
@@ -54,7 +73,7 @@ body {
     gap: 0 4px;
     padding: 27px 8px;
   }
-  .ullamco-section__text{
+  .ullamco-section__text {
     padding: 0 11px;
   }
   .ullamco-section__title {
@@ -64,3 +83,85 @@ body {
     font-size: 14px;
   }
 }
+/* end section ullamco */
+
+/* start ipsum-section */
+
+.ipsum-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ipsum-section__items {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.ipsum-section__item {
+  background-color: #f4f0ea;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 22px;
+}
+.ipsum-section__item__title {
+  /* text-align: left; */
+  font-size: 64px;
+  font-weight: 400;
+  padding-bottom: 24px;
+}
+.ipsum-section__item.text {
+  padding: 48px;
+}
+.ipsum-section__item__text {
+  display: grid;
+  gap: 24px 0;
+}
+.ipsum-section__item .ipsum-section__item__space {
+  flex: 1;
+}
+.ipsum-section__item__text__wrap span {
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+.ipsum-section__item__text__wrap p {
+  line-height: 22px;
+}
+
+@media (max-width: 767px) {
+  .ipsum-section__item.text {
+    padding: 20px 18px;
+  }
+  .ipsum-section__item__title {
+    font-size: 32px;
+  }
+  .ipsum-section__item__text__wrap span {
+    font-size: 18px;
+  }
+  .ipsum-section {
+    padding: 0 8px;
+  }
+  .ipsum-section__items {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+  .ipsum-section__item:nth-child(1) {
+    order: 2;
+  }
+  .ipsum-section__item:nth-child(2) {
+    order: 1;
+  }
+  .ipsum-section__item:nth-child(3) {
+    order: 3;
+  }
+  .ipsum-section__item:nth-child(4) {
+    order: 4;
+  }
+}
+/* end ipsum-section */
