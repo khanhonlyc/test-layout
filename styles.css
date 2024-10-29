@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1376px;
+  margin: 0 auto;
+}
+.ullamco-section__title{
+    font-family: "Lora", serif;
+    text-align: center;
+    line-height: 54px;
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 8px;
+}
+.ullamco-section__images {
+  display: flex;
+  justify-content: center;
+}
+.ullamco-section__image{
+}
+.ullamco-section__images__gap{
+    width: 100%;
+    justify-items: center;
+    display: flex;
+    gap: 0 32px;
+    padding: 41px 0;
+}
+.ullamco-section {
+  margin: 0 auto;
+}
+@media only screen and (max-width: 767px){
+    .ullamco-section__images__gap{
+        gap: 0 4px;
+        padding: 27px 0;
+    }
+}
